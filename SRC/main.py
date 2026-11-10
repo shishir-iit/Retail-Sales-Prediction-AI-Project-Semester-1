@@ -56,3 +56,13 @@ model.fit(X_train, y_train)
 coef = pd.DataFrame({'Feature': feature_columns, 'Coefficient': model.coef_})
 print('Intercept:', round(model.intercept_, 2))
 display(coef)
+
+y_pred = model.predict(X_test)
+
+mae  = mean_absolute_error(y_test, y_pred)
+rmse = np.sqrt(mean_squared_error(y_test, y_pred))
+r2   = r2_score(y_test, y_pred)
+
+print(f'MAE  : {mae:,.2f}')
+print(f'RMSE : {rmse:,.2f}')
+print(f'R2   : {r2:.3f}')
