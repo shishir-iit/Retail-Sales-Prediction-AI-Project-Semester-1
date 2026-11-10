@@ -55,7 +55,7 @@ model.fit(X_train, y_train)
 
 coef = pd.DataFrame({'Feature': feature_columns, 'Coefficient': model.coef_})
 print('Intercept:', round(model.intercept_, 2))
-display(coef)
+print(coef)
 
 y_pred = model.predict(X_test)
 
