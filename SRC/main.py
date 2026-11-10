@@ -77,3 +77,25 @@ print("Model: Linear Regression")
 print(f"MAE  : {mae:,.2f}")
 print(f"RMSE : {rmse:,.2f}")
 print(f"R2   : {r2:.3f}")
+plt.figure(figsize=(7,6))
+plt.scatter(y_test, y_pred, alpha=.7, edgecolor='black')
+lo, hi = min(y_test.min(), y_pred.min()), max(y_test.max(), y_pred.max())
+plt.plot([lo, hi], [lo, hi], '--', label='Perfect prediction')
+plt.xlabel('Actual next-day sales'); plt.ylabel('Predicted next-day sales')
+plt.title('Actual vs Predicted')
+plt.legend()
+plt.grid(alpha=.25)
+
+plt.savefig("outputs/actual_vs_predicted.png", dpi=300, bbox_inches="tight")
+print("Saved outputs/actual_vs_predicted.png")
+plt.show()
+
+latest = X.iloc[[-1]]
+print("\nFeatures used (last day in data):")
+print(latest)
+
+prediction = model.predict(latest)[0]
+
+print(f"\nPredicted next-day sales: GBP {prediction:,.2f}")
+print("\nAll outputs saved successfully!")
+print("="*45)
