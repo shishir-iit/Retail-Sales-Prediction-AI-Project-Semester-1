@@ -49,3 +49,10 @@ f.head()
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.20, random_state=42)
 print('Train:', len(X_train), ' Test:', len(X_test))
+
+model = LinearRegression()
+model.fit(X_train, y_train)
+
+coef = pd.DataFrame({'Feature': feature_columns, 'Coefficient': model.coef_})
+print('Intercept:', round(model.intercept_, 2))
+display(coef)
