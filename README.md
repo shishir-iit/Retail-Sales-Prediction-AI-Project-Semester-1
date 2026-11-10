@@ -147,9 +147,10 @@ Retail-Sales-Forecasting/
 ├── data/Online_Retail.csv
 ├── src/main.py
 ├── src/model.py
-├──outputs/
-├── requirements.txt
+├── outputs/
+├── .gitignore
 ├── README.md
+├── requirements.txt
 ```
 
 ## 10. Installation and Setup
