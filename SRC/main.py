@@ -30,7 +30,10 @@ print(daily.describe())
 plt.figure(figsize=(12,4))
 plt.plot(daily.index, daily.values)
 plt.title('Daily Sales'); plt.xlabel('Date'); plt.ylabel('Sales (GBP)')
-plt.grid(alpha=.25); plt.show()
+plt.grid(alpha=.25)
+plt.savefig("outputs/daily_sales.png", dpi=300, bbox_inches="tight")
+print("Saved outputs/daily_sales.png")
+plt.show()
 
 f = pd.DataFrame({'Sales': daily})
 f['target'] = f['Sales'].shift(-1)                 # tomorrow's sales
@@ -47,7 +50,7 @@ feature_columns = ['Sales','roll3','roll7','lag7','next_sat','next_sun','q4']
 X = f[feature_columns]
 y = f['target']
 print(X.shape)
-f.head()
+print(f.head())
 
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.20, random_state=42)
