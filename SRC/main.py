@@ -18,3 +18,13 @@ df = df[df['StockCode'].astype(str).str.match(r'^\d')]
 df['Sales'] = df['Quantity'] * df['UnitPrice']
 df = df[df['Sales'] < df['Sales'].quantile(0.9999)]          
 print('Rows after cleaning:', len(df))
+
+daily = (df.groupby(df['InvoiceDate'].dt.normalize())['Sales'].sum()
+           .asfreq('D', fill_value=0))
+daily = daily.iloc[:-1]            # last day is incomplete
+print(daily.describe())
+
+plt.figure(figsize=(12,4))
+plt.plot(daily.index, daily.values)
+plt.title('Daily Sales'); plt.xlabel('Date'); plt.ylabel('Sales (GBP)')
+plt.grid(alpha=.25); plt.show()
