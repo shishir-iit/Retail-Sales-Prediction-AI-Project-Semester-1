@@ -45,3 +45,7 @@ X = f[feature_columns]
 y = f['target']
 print(X.shape)
 f.head()
+
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.20, random_state=42)
+print('Train:', len(X_train), ' Test:', len(X_test))
