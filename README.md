@@ -227,7 +227,7 @@ Compares the actual next-day sales values with the values predicted by the Linea
 | Team Member | Name | Entry Number | Role |
 |---|---|---|---|
 | Member 1 | Varsha Yadv | 2026ESB1498 | Documentation Lead |
-| Member 2 | Mohammed Rizwan N |2026EEbB1380 | Execution Lead |
+| Member 2 | Mohammed Rizwan N |2026EEB1380 | Execution Lead |
 | Member 3 | Vijval Bhoriya | 2026AIB1096 | PPT Lead |
 | Member 4 | Ananthaneni Naga Shishir | 2026MCB1509 | Video Lead |
 
@@ -248,11 +248,11 @@ All team members contributed to the project through coding, testing, documentati
 
 AI tools were used to assist with project development and documentation.
 
-- ChatGPT: Assisted with understanding concepts, coding support, debugging, and README documentation.
+- ChatGPT: Assisted with understanding concepts, coding support, debugging, ppt and README documentation.
+- Claude: Assisted with codding support.
 - All generated code and outputs should be reviewed and tested by the project team.
 - The team is responsible for understanding the implementation, verifying the results, and explaining the project.
 
-*Update this disclosure to accurately reflect the AI tools and tasks actually used by your team.*
 
 ## 16. Conclusion
 
