@@ -28,3 +28,20 @@ plt.figure(figsize=(12,4))
 plt.plot(daily.index, daily.values)
 plt.title('Daily Sales'); plt.xlabel('Date'); plt.ylabel('Sales (GBP)')
 plt.grid(alpha=.25); plt.show()
+
+f = pd.DataFrame({'Sales': daily})
+f['target'] = f['Sales'].shift(-1)                 # tomorrow's sales
+f['roll3']  = f['Sales'].rolling(3).mean()
+f['roll7']  = f['Sales'].rolling(7).mean()
+f['lag7']   = f['Sales'].shift(6)
+next_dow    = (f.index.dayofweek + 1) % 7
+f['next_sat'] = (next_dow == 5).astype(int)
+f['next_sun'] = (next_dow == 6).astype(int)
+f['q4']       = f.index.month.isin([10, 11, 12]).astype(int)
+f = f.dropna()
+
+feature_columns = ['Sales','roll3','roll7','lag7','next_sat','next_sun','q4']
+X = f[feature_columns]
+y = f['target']
+print(X.shape)
+f.head()
