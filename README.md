@@ -244,7 +244,7 @@ Compares the actual next-day sales values with the values predicted by the Linea
 
 **Presentation:** [https://docs.google.com/presentation/d/1Qy9LWfbEXwlklEVB77rsPVVUHSqu7taa/edit?usp=drive_link&ouid=101021748311832053524&rtpof=true&sd=true]
 
-**Demonstration Video:** [https://docs.google.com/presentation/d/1Qy9LWfbEXwlklEVB77rsPVVUHSqu7taa/edit?usp=drive_link&ouid=101021748311832053524&rtpof=true&sd=true]
+**Demonstration Video:** [https://drive.google.com/drive/folders/1FLSx2_lccaLYox_w-Qo7TN71-hkVaqAA?usp=drive_link]
 
 ## 15. AI-Use Disclosure
 
