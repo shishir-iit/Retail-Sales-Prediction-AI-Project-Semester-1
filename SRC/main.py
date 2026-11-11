@@ -9,7 +9,11 @@ import os
 os.makedirs("../outputs", exist_ok=True)
 
 
-df = pd.read_csv('../Data/Online_Retail.csv')
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+DATA_PATH = os.path.join(BASE_DIR, "Data", "Online_Retail.csv")
+
+df = pd.read_csv(DATA_PATH)
 print('Shape:', df.shape)
 print(df.isnull().sum())
 print(df.head())
