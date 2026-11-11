@@ -6,12 +6,13 @@ from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 import os
 
-os.makedirs("../outputs", exist_ok=True)
-
-
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 DATA_PATH = os.path.join(BASE_DIR, "Data", "Online_Retail.csv")
+
+OUTPUT_DIR = os.path.join(BASE_DIR, "outputs")
+
+os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 df = pd.read_csv(DATA_PATH)
 print('Shape:', df.shape)
@@ -35,7 +36,7 @@ plt.figure(figsize=(12,4))
 plt.plot(daily.index, daily.values)
 plt.title('Daily Sales'); plt.xlabel('Date'); plt.ylabel('Sales (GBP)')
 plt.grid(alpha=.25)
-plt.savefig("../outputs/daily_sales.png", dpi=300, bbox_inches="tight")
+plt.savefig(os.path.join(OUTPUT_DIR, "daily_sales.png"), dpi=300, bbox_inches="tight")
 print("Saved outputs/daily_sales.png")
 plt.show()
 
@@ -90,7 +91,7 @@ plt.title('Actual vs Predicted')
 plt.legend()
 plt.grid(alpha=.25)
 
-plt.savefig("../outputs/actual_vs_predicted.png", dpi=300, bbox_inches="tight")
+plt.savefig(os.path.join(OUTPUT_DIR, "actual_vs_predicted.png"), dpi=300, bbox_inches="tight")
 print("Saved outputs/actual_vs_predicted.png")
 plt.show()
 
