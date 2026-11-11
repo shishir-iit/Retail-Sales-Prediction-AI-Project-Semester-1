@@ -31,7 +31,7 @@ plt.figure(figsize=(12,4))
 plt.plot(daily.index, daily.values)
 plt.title('Daily Sales'); plt.xlabel('Date'); plt.ylabel('Sales (GBP)')
 plt.grid(alpha=.25)
-plt.savefig("outputs/daily_sales.png", dpi=300, bbox_inches="tight")
+plt.savefig("../outputs/daily_sales.png", dpi=300, bbox_inches="tight")
 print("Saved outputs/daily_sales.png")
 plt.show()
 
@@ -86,7 +86,7 @@ plt.title('Actual vs Predicted')
 plt.legend()
 plt.grid(alpha=.25)
 
-plt.savefig("outputs/actual_vs_predicted.png", dpi=300, bbox_inches="tight")
+plt.savefig("../outputs/actual_vs_predicted.png", dpi=300, bbox_inches="tight")
 print("Saved outputs/actual_vs_predicted.png")
 plt.show()
 
