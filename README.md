@@ -254,7 +254,7 @@ AI tools were used to assist with project development and documentation.
 
 - ChatGPT: Assisted with understanding concepts, coding support, debugging, ppt and README documentation.
 - Claude: Assisted with codding support.
-- All generated code and outputs should be reviewed and tested by the project team.
+- All generated code and outputs were reviewed and tested by the project team.
 - The team is responsible for understanding the implementation, verifying the results, and explaining the project.
 
 
