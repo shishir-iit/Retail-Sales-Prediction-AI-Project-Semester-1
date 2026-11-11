@@ -242,9 +242,9 @@ Compares the actual next-day sales values with the values predicted by the Linea
 - Project presentation (5 slides).
 - Project demonstration video (maximum 5 minutes).
 
-**Presentation:** [https://docs.google.com/presentation/d/1QVvmAjIntbVPk_uEnH2zpLYTiXza5ChR/edit?usp=drive_link&ouid=101021748311832053524&rtpof=true&sd=true]
+**Presentation:** [https://docs.google.com/presentation/d/1Qy9LWfbEXwlklEVB77rsPVVUHSqu7taa/edit?usp=drive_link&ouid=101021748311832053524&rtpof=true&sd=true]
 
-**Demonstration Video:** [Add video link here]
+**Demonstration Video:** [https://docs.google.com/presentation/d/1Qy9LWfbEXwlklEVB77rsPVVUHSqu7taa/edit?usp=drive_link&ouid=101021748311832053524&rtpof=true&sd=true]
 
 ## 15. AI-Use Disclosure
 
