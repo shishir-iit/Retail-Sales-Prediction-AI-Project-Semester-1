@@ -62,7 +62,7 @@ plt.xlabel('Date')
 plt.ylabel('Sales (GBP)')
 plt.grid(alpha=.25)
 
-plt.savefig(os.path.join(OUTPUT_DIR, "daily_sales.png"), dpi=300, bbox_inches="tight"))
+plt.savefig(os.path.join(OUTPUT_DIR, "daily_sales.png"), dpi=300, bbox_inches="tight")
 
 print("\nSaved: outputs/daily_sales.png")
 
