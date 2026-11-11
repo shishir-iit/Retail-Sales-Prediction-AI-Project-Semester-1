@@ -1,7 +1,21 @@
 # Retail-Sales-Prediction-AI-Project-Semester-1
 # 📊 Retail Sales Forecasting Using Linear Regression
 
-## 1. Project Overview
+
+## 1. TEAM 5
+
+Team Members and Responsibilities
+
+| Team Member | Name | Entry Number | Role |
+|---|---|---|---|
+| Member 1 | Varsha Yadv | 2026ESB1498 | Documentation Lead |
+| Member 2 | Mohammed Rizwan N |2026EEB1380 | Execution Lead |
+| Member 3 | Vijval Bhoriya | 2026AIB1096 | PPT Lead |
+| Member 4 | Ananthaneni Naga Shishir | 2026MCB1509 | Video Lead |
+
+All team members contributed to the project through coding, testing, documentation, and collaboration.
+
+## 2. Project Overview
 
 The objective of this project is to develop a Machine Learning model that predicts the next day's sales quantity using historical online retail transaction data.
 
@@ -9,13 +23,13 @@ The project uses **Linear Regression**, a supervised machine learning algorithm,
 
 The project involves cleaning and preprocessing transaction records, aggregating sales data by date, extracting useful features, training a Linear Regression model, and evaluating its prediction performance.
 
-## 2. Problem Statement
+## 3. Problem Statement
 
 Retail businesses need to estimate future sales to manage inventory, plan stock requirements, and make better business decisions.
 
 This project addresses the problem by developing a predictive model that uses historical daily sales information to forecast sales for the following day.
 
-## 3. Objectives
+## 4. Objectives
 
 - Understand and preprocess historical retail transaction data.
 - Remove duplicate, cancelled, invalid, and extreme transaction records.
@@ -25,7 +39,7 @@ This project addresses the problem by developing a predictive model that uses hi
 - Evaluate model performance using suitable evaluation metrics.
 - Visualize actual and predicted sales.
 
-## 4. Dataset Description
+## 5. Dataset Description
 
 **Dataset:** Online Retail Dataset
 
@@ -50,7 +64,7 @@ Important columns include:
 
 The target variable in this project is **next-day total sales value**, measured in GBP (£), rather than the number of individual products sold.
 
-## 5. Technologies and Libraries Used
+## 6. Technologies and Libraries Used
 
 - Python
 - Pandas – Data cleaning and manipulation
@@ -59,7 +73,7 @@ The target variable in this project is **next-day total sales value**, measured 
 - Scikit-learn – Machine Learning and model evaluation
 - Jupyter Notebook – Project implementation
 
-## 6. Methodology
+## 7. Methodology
 
 The project follows these steps:
 
@@ -108,7 +122,7 @@ Evaluate the model using:
 
 Use the trained model and the latest available sales information to predict the next day's sales.
 
-## 7. Machine Learning Algorithm
+## 8. Machine Learning Algorithm
 
 ### Linear Regression
 
@@ -129,7 +143,7 @@ Where:
 
 In this project, Linear Regression predicts the next day's sales using historical sales patterns and calendar-based features.
 
-## 8. Model Evaluation Metrics
+## 9. Model Evaluation Metrics
 
 | Metric | Purpose |
 |---|---|
@@ -139,7 +153,7 @@ In this project, Linear Regression predicts the next day's sales using historica
 
 A higher R² score generally indicates better model performance.
 
-## 9. Project Structure
+## 10. Project Structure
 
 ```text
 Retail-Sales-Forecasting/
@@ -153,7 +167,7 @@ Retail-Sales-Forecasting/
 ├── requirements.txt
 ```
 
-## 10. Installation and Setup
+## 11. Installation and Setup
 
 ### Prerequisites
 
@@ -193,7 +207,7 @@ Open `Next_Day_Sales_Linear_Regression.ipynb` and execute all cells in order.
 
 **Note:** Update the dataset loading path in the notebook to `Online_Retail.csv` when running locally instead of using the Google Colab path `/content/Online_Retail.csv`.
 
-## 11. Expected Output
+## 12. Expected Output
 
 After successfully executing the notebook, the project produces:
 
@@ -206,7 +220,7 @@ After successfully executing the notebook, the project produces:
 7. Actual vs Predicted Sales graph.
 8. Prediction of next-day sales in GBP (£).
 
-## 12. Results and Visualization
+## 13. Results and Visualization
 
 The project generates visualizations to understand historical sales trends and evaluate prediction performance.
 
@@ -223,17 +237,6 @@ Compares the actual next-day sales values with the values predicted by the Linea
 <img width="474" height="404" alt="Screenshot 2026-11-10 203214" src="https://github.com/user-attachments/assets/878fa71d-054e-4f69-9e9e-6c388084c8d3" />
 
 
-## 13. Team Members and Responsibilities
-
-| Team Member | Name | Entry Number | Role |
-|---|---|---|---|
-| Member 1 | Varsha Yadv | 2026ESB1498 | Documentation Lead |
-| Member 2 | Mohammed Rizwan N |2026EEB1380 | Execution Lead |
-| Member 3 | Vijval Bhoriya | 2026AIB1096 | PPT Lead |
-| Member 4 | Ananthaneni Naga Shishir | 2026MCB1509 | Video Lead |
-
-All team members contributed to the project through coding, testing, documentation, and collaboration.
-
 ## 14. Project Deliverables
 
 - GitHub repository containing the project code and documentation.
@@ -241,7 +244,7 @@ All team members contributed to the project through coding, testing, documentati
 - Project presentation (5 slides).
 - Project demonstration video (maximum 5 minutes).
 
-**Presentation:** [Add PPT link here]
+**Presentation:** [https://docs.google.com/presentation/d/1QVvmAjIntbVPk_uEnH2zpLYTiXza5ChR/edit?usp=drive_link&ouid=101021748311832053524&rtpof=true&sd=true]
 
 **Demonstration Video:** [Add video link here]
 
