@@ -62,7 +62,6 @@ Important columns include:
 | CustomerID | Customer identification |
 | Country | Customer's country |
 
-The target variable in this project is **next-day total sales value**, measured in GBP (£), rather than the number of individual products sold.
 
 ## 6. Technologies and Libraries Used
 
@@ -160,7 +159,6 @@ Retail-Sales-Forecasting/
 │
 ├── data/Online_Retail.csv
 ├── src/main.py
-├── src/model.py
 ├── outputs/
 ├── .gitignore
 ├── README.md
