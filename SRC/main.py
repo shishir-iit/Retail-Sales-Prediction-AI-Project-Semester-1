@@ -9,7 +9,7 @@ import os
 os.makedirs("outputs", exist_ok=True)
 
 
-df = pd.read_csv('Online_Retail.csv')
+df = pd.read_csv('../Data/Online_Retail.csv')
 print('Shape:', df.shape)
 print(df.isnull().sum())
 print(df.head())
