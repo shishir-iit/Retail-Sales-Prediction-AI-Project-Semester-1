@@ -17,6 +17,9 @@ os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 df = pd.read_csv(DATA_PATH)
 
+print("\n")
+print("\n")
+
 print("\nDataset Shape:", df.shape)
 
 print("\nMissing Values:")
