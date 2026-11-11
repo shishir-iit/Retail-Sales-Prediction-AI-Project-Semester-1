@@ -178,7 +178,7 @@ Retail-Sales-Forecasting/
 ### Step 1: Clone the Repository
 
 ```bash
-git clone YOUR_GITHUB_REPOSITORY_LINK
+git clone https://github.com/shishir-iit/Retail-Sales-Prediction-AI-Project-Semester-1
 ```
 
 ### Step 2: Navigate to the Project Folder
