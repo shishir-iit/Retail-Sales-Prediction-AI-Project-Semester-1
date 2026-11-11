@@ -6,7 +6,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 import os
 
-os.makedirs("outputs", exist_ok=True)
+os.makedirs("../outputs", exist_ok=True)
 
 
 df = pd.read_csv('../Data/Online_Retail.csv')
